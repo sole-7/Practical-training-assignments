@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+        }
+        
+        #box {
+            width: 600px;
+            height: 300px;
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            position: absolute;
+            justify-content: space-around;
+            border: 3px solid black;
+        }
+        
+        span {
+            border: 1px solid;
+            opacity: .5;
+        }
+        
+        span:hover {
+            opacity: 1;
+            cursor: crosshair;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+
+        <span onmousemove="hov()"><img src="./1.jpg" alt=""></span>
+        <span onmousemove="hov()"><img src="./1.jpg" alt=""></span>
+        <span onmousemove="hov()"><img src="./1.jpg" alt=""></span>
+        <span onmousemove="hov()"><img src="./1.jpg" alt=""></span>
+        <span onmousemove="hov()"><img src="./1.jpg" alt=""></span>
+        <span onmousemove="hov()"><img src="./1.jpg" alt=""></span>
+        <span onmousemove="hov()"><img src="./1.jpg" alt=""></span>
+        <span onmousemove="hov()"><img src="./1.jpg" alt=""></span>
+
+    </div>
+</body>
+<script>
+    var pall = document.getElementsByTagName('span')
+
+    function hov() {
+        for (var i = 0; i++; i < pall.length) {
+            pall[i].style.opacity = '1'
+        }
+    }
+</script>
+
+</html>

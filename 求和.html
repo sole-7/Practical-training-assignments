@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        #btn {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+        <input type="text" value="1,2,3" id="inp"> <span>输入数字求和，数字之间用半角分隔</span><br>
+        <button id="btn">求和</button>
+        <span id="sm"></span>
+    </div>
+
+</body>
+
+
+<script>
+    var a = document.getElementById('inp')
+
+    var b = document.getElementById('btn')
+
+    var c = document.getElementById('sm')
+
+    a.onkeyup = function() {
+        this.value = this.value.replace(/[^(\d)|(,)]/, "")
+    }
+
+
+    b.onclick = function() {
+        var sum = 0
+        var a = document.getElementById('inp').value.split(",")
+
+        for (var i in a) {
+            sum += parseInt(a[i]);
+        }
+        c.innerText = sum
+    }
+</script>
+
+</html>

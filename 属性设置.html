@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        
+        .top {
+            line-height: 30px;
+        }
+        
+        button {
+            width: 45px;
+            height: 25px;
+        }
+        
+        #cha {
+            margin-top: 20px;
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            color: white;
+            font-size: 14px;
+            position: absolute;
+            left: 260px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        属性名：&nbsp;<input type="text" value="background" id="ne"> <br> 属性值：
+        <input type="text" value="green" id="ya"><br>
+        <button id="qd">确定</button>
+        <button id="cz">重置</button>
+    </div>
+
+    <div id="cha">
+        &emsp;&emsp;在上方输入框输入"属性名"及"属性值",点击确定按钮查看效果。
+    </div>
+</body>
+<script>
+    var a = document.getElementById('qd')
+    var b = document.getElementById('cz')
+    var d = document.getElementById('ne')
+    var e = document.getElementById('ya')
+    var c = document.getElementById('cha')
+
+    a.onclick = function() {
+        c.style.backgroundColor = d.value
+        c.style.color = e.value
+    }
+    b.onclick = function() {
+        c.style.backgroundColor = 'black'
+        c.style.color = 'white'
+    }
+</script>
+
+</html>

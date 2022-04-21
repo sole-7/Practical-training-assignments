@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鼠标移入移出</title>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+        }
+        
+        #box {
+            display: block;
+            margin-top: 20px;
+            width: 240px;
+            height: 240px;
+            background-color: black;
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span id="box" onmouseout="change()" onmouseover="goout()">
+            <br><br>
+            鼠标移入改变样式，鼠标
+            <br>
+            移出恢复。
+        </span>
+    </div>
+</body>
+<SCRipt>
+    var a = document.getElementById('box')
+
+    function change() {
+        a.style.border = ''
+        a.style.backgroundColor = ''
+    }
+
+    function goout() {
+        a.style.border = '10px solid hotpink'
+        a.style.backgroundColor = 'pink'
+    }
+</SCRipt>
+
+</html>
