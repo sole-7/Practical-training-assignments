@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>布局</title>
+    <style>
+        .head {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .tit {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .content {
+            margin-top: 20px;
+            width: 27.3rem;
+            height: 13.25rem;
+            background-color: #43d5b1;
+            border-radius: 30px;
+            color: #b9eedf;
+            font-size: 12px;
+            text-align: center;
+            line-height: 2rem;
+        }
+        
+        ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            text-align: center;
+        }
+        
+        * {
+            margin: 7px;
+        }
+        
+        .dd {
+            color: white;
+        }
+        
+        .usergl {
+            width: 27.3rem;
+            height: 7rem;
+            background-color: white;
+            border-radius: 30px;
+            margin-top: -50px;
+        }
+        
+        .qy {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        
+        .bottom {
+            width: 27rem;
+            height: 11.5rem;
+            background-color: white;
+            border-radius: 15px;
+            line-height: 30px;
+            margin-top: 20px;
+            border: 1px solid #f3faf8;
+        }
+        
+        .tab {
+            position: fixed;
+            top: 845px;
+            left: -20px;
+            width: 27rem;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <img src="./images/屏幕截图-2022-04-18-160718_03.gif" alt="">
+        <img src="./images/屏幕截图-2022-04-18-160718_05.gif" alt="">
+    </div>
+    <div class="tit">
+        <img src="./images/屏幕截图-2022-04-18-160718_10.gif" alt="">
+        <span style="position: absolute; top: 70px; left: 85px;">王明伟医生</span>
+        <img src="./images/屏幕截图-2022-04-18-160718_13.gif" alt="">
+    </div>
+    <div class="content">
+        <ul>
+            <li>
+                已签约人数
+                <br>
+                <span class="dd" style="text-align: center; font-weight: 700; font-size: 18px;">1000</span>
+            </li>
+            <li>签约指标
+                <br>
+                <span class="dd" style="text-align: center; font-weight: 700; font-size: 18px;">2000</span>
+            </li>
+            <li>签约率
+                <br>
+                <span class="dd" style="text-align: center; font-weight: 700; font-size: 18px;">50%</span>
+            </li>
+        </ul>
+        <ul>
+            <li>服务次数
+                <br>
+                <span class="dd" style="text-align: center; font-weight: 700; font-size: 18px;">1000</span>
+            </li>
+            <li>服务人数
+                <br>
+                <span class="dd" style="text-align: center; font-weight: 700; font-size: 18px;">100</span>
+            </li>
+            <li>好评率
+                <br>
+                <span class="dd" style="text-align: center; font-weight: 700; font-size: 18px;">99%</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="usergl">
+        <ul>
+            <li>
+                <img src="./images/屏幕截图-2022-04-18-160718_17.gif" alt="">
+                <br>
+                <p>新建文档</p>
+            </li>
+            <li>
+                <img src="./images/屏幕截图-2022-04-18-160718_19.gif" alt="">
+                <br>
+                <p>签约管理</p>
+            </li>
+            <li>
+                <img src="./images/屏幕截图-2022-04-18-160718_21.gif" alt="">
+                <br>
+                <p>服务管理</p>
+            </li>
+        </ul>
+    </div>
+    <div class="middle">
+        <p style="background-color: #f7fdfb; height: 10px; width: 450px; text-align: center; margin-top: 20px;"></p>
+        <p style="background-color: #f6fafb; height: 16px; width: 450px; margin-top: -7px; text-align: center;"></p>
+    </div>
+    <div class="qy">
+        <h3>签约申请(3)</h3>
+        <span style="color: gray;">查看全部></span>
+    </div>
+    <div class="bottom">
+        <p style="padding-top: 20px;">
+            <span style="font-size: 20px; font-weight: 700; padding-left: 20px;">王小明</span>
+            <span style="color: gray;">58岁</span>
+            <img src="./images/屏幕截图-2022-04-18-160718_26.gif" style="padding-right: 120px; vertical-align: middle;">
+            <span style="color: #f97a70;">待审核</span>
+        </p>
+        <p style="padding-left: 20px;">
+            <span style="color: gray;">
+                身份证号&nbsp;&nbsp;345022*******0423
+            </span>
+        </p>
+        <p style="padding-left: 20px;">
+            <span style="color: gray;">
+                签约团队&nbsp;&nbsp;李明明团队
+            </span>
+        </p>
+        <p style="padding-left: 20px;">
+            <span style="color: gray;">
+                服务包&nbsp;&nbsp;老年人服务包
+            </span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p style="padding-top: 20px;">
+            <span style="font-size: 20px; font-weight: 700; padding-left: 20px;">王小明</span>
+            <span style="color: gray;">58岁</span>
+            <img src="./images/屏幕截图-2022-04-18-160718_26.gif" style="padding-right: 120px; vertical-align: middle;">
+            <span style="color: #f97a70;">待审核</span>
+        </p>
+        <p style="padding-left: 20px;">
+            <span style="color: gray;">
+                身份证号&nbsp;&nbsp;345022*******0423
+            </span>
+        </p>
+        <p style="padding-left: 20px;">
+            <span style="color: gray;">
+                签约团队&nbsp;&nbsp;李明明团队
+            </span>
+        </p>
+        <p style="padding-left: 20px;">
+            <span style="color: gray;">
+                服务包&nbsp;&nbsp;老年人服务包
+            </span>
+        </p>
+    </div>
+    <div class="tab">
+        <ul>
+            <li>
+                <img src="./images/屏幕截图-2022-04-18-160718_29.gif" alt="">
+                <br>
+                <span style="color: #42d5af;">首页</span>
+
+            </li>
+            <li>
+                <img src="./images/屏幕截图-2022-04-18-160718_31.gif" alt="">
+                <br> 居民
+            </li>
+            <li>
+                <img src="./images/屏幕截图-2022-04-18-160718_34.gif" alt="">
+                <br> 消息
+            </li>
+            <li>
+                <img src="./images/屏幕截图-2022-04-18-160718_36.gif" alt="">
+                <br> 我的
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

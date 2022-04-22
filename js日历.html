@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0 auto;
+        }
+        
+        .box {
+            width: 440px;
+            height: 280px;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        span {
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            width: 90px;
+            height: 80px;
+            margin-top: 10PX;
+            line-height: 40PX;
+        }
+        
+        sub {
+            font-size: 20px;
+            font-weight: 700;
+        }
+        
+        .box2 {
+            width: 440px;
+            height: 100px;
+            background-color: aquamarine;
+            position: relative;
+        }
+        
+        .wz {
+            width: 420px;
+            height: 70px;
+            line-height: 70px;
+            background-color: aqua;
+            display: none;
+            position: absolute;
+            top: 15px;
+            left: 10px;
+        }
+        
+        span:hover {
+            background-color: white;
+            color: red;
+        }
+        
+        .wz:nth-child(1) {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <span>
+            <p>
+                1
+            </p>
+            <p>
+                JAN
+            </p>
+        </span>
+        <span>
+            <p>
+                2
+            </p>
+            <p>
+                FER
+            </p>
+        </span>
+        <span>
+            <p>
+                3
+            </p>
+            <p>
+                MAR
+            </p>
+        </span>
+        <span>
+            <p>
+                4
+            </p>
+            <p>
+                APR
+            </p>
+        </span>
+        <span>
+            <p>
+                5
+            </p>
+            <p>
+                MAY
+            </p>
+        </span>
+        <span>
+            <p>
+                6
+            </p>
+            <p>
+                JUN
+            </p>
+        </span>
+        <span>
+            <p>
+                7
+            </p>
+            <p>
+                JUL
+            </p>
+        </span>
+        <span>
+            <p>
+                8
+            </p>
+            <p>
+                AUG
+            </p>
+        </span>
+        <span>
+            <p>
+                9
+            </p>
+            <p>
+                SER
+            </p>
+        </span>
+        <span>
+            <p>
+                10
+            </p>
+            <p>
+                OCT
+            </p>
+        </span>
+        <span>
+            <p>
+                11
+            </p>
+            <p>
+                NOV
+            </p>
+        </span>
+        <span>
+            <p>
+                12
+            </p>
+            <p>
+                DEC
+            </p>
+        </span>
+    </div>
+    <div class="box2">
+        <h4 class="wz"><sub>1月节日</sub>元旦：1月1日至3日放假三天</h4>
+        <h4 class="wz"><sub>2月节日</sub>2月2日至8日放假7天。</h4>
+        <h4 class="wz"><sub>3月节日</sub>妇女节：3月8日妇女节，与我无关。</h4>
+        <h4 class="wz"><sub>4月节日</sub>清明节：4月3日至5日放假3天</h4>
+        <h4 class="wz"><sub>5月节日</sub>劳动节：4月30日至5月2日放假3天。</h4>
+        <h4 class="wz"><sub>6月节日</sub>端午节：6月4日至6日放假3天。</h4>
+        <h4 class="wz"><sub>7月节日</sub>小暑：7月7日小暑。不放假。</h4>
+        <h4 class="wz"><sub>8月节日</sub>七夕节：8月6日七夕节。不放假。</h4>
+        <h4 class="wz"><sub>9月节日</sub>中秋节：9月10日至12日放假3天。</h4>
+        <h4 class="wz"><sub>10月节日</sub>国庆节：10月1日至7日放假7天。</h4>
+        <h4 class="wz"><sub>11月节日</sub>立冬：11月8日立冬。不放假</h4>
+        <h4 class="wz"><sub>12月节日</sub>艾滋病日:12月1日<br />废除奴隶制国际日:12月2日。</h4>
+    </div>
+</body>
+<script>
+    // var arr = [1, 2, 3]
+    // for (var i = 0; i < arr.length; i++) {
+    //     console.log(arr[i]);
+    // }
+    var a = document.querySelectorAll('span')
+    var b = document.querySelectorAll('h4')
+    for (var i = 0; i < a.length; i++) {
+        a[i].index = i
+        console.log(a[i].index);
+        a[i].onmouseover = function() {
+
+            for (var i = 0; i < b.length; i++) {
+                b[i].index = i
+                console.log(b[i].index);
+                var c = this.index
+                b[0].style.display = 'none'
+                b[c].style.display = 'block'
+            }
+
+        }
+    }
+</script>
+
+</html>

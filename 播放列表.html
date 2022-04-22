@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0 auto;
+        }
+        
+        #sj {
+            width: 0;
+            height: 0;
+            border-top: black solid;
+            border-right: transparent solid;
+            margin: 50px;
+            border-width: 10px;
+            position: fixed;
+            top: -36px;
+            left: 420px;
+            transform: rotate(224deg);
+        }
+        
+        #zj {
+            width: 0;
+            height: 0;
+            border-top: black solid;
+            border-right: transparent solid;
+            margin: 50px;
+            border-width: 10px;
+            position: fixed;
+            top: -36px;
+            left: 420px;
+            transform: rotate(130deg);
+            display: none;
+        }
+        
+        li {
+            list-style: none;
+            border-bottom: 1px solid white;
+            background-color: rgb(207, 181, 232);
+            margin-left: -40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box" style="width: 220px; height: 200px; border: 1px solid; margin-top: 10px; line-height: 28px;">
+        <div class="to" style="display: flex; justify-content: space-between; border-bottom: 1px solid; background-color: rgb(205, 200, 233);">
+            <span style="margin-left: 5px;">播放列表...</span>
+        </div>
+        <ul id="list">
+            <li>歌名1</li>
+            <li>歌名2</li>
+            <li>歌名3</li>
+            <li>歌名4</li>
+            <li>歌名5</li>
+            <li>歌名6</li>
+        </ul>
+        <div id="sj">
+
+        </div>
+        <div id="zj">
+
+        </div>
+    </div>
+
+</body>
+<script>
+    var a = document.getElementById('list')
+    var b = document.getElementById('sj')
+    var d = document.getElementById('zj')
+    var c = document.getElementById('box')
+    b.onclick = function() {
+        a.style.display = 'none'
+        c.style.border = 'none'
+        b.style.display = 'none'
+        d.style.display = 'block'
+    }
+    d.onclick = function() {
+        a.style.display = 'block'
+        c.style.border = 'block'
+        b.style.display = 'block'
+        d.style.display = 'none'
+
+    }
+</script>
+
+</html>

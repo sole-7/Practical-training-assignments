@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>srf</title>
+    <style>
+        .box {
+            margin: auto;
+            padding: 0;
+            text-align: center;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        #list {
+            display: none;
+        }
+        
+        li {
+            display: block;
+            width: 60px;
+            border: 1px solid yellow;
+            margin: auto;
+        }
+        
+        li:hover {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <input type="button" style="margin-left: 40px;" id="btn" value="输入法"></input>
+        <ul id="list">
+            <li>简写</li>
+            <li>拼音</li>
+            <li id="last">关闭</li>
+        </ul>
+    </div>
+</body>
+<script>
+    var a = document.getElementById('btn')
+    var b = document.getElementById('list')
+    var c = document.getElementById('last')
+
+    c.onclick = function() {
+        b.style.display = 'none'
+    }
+
+    a.onclick = function() {
+        if (b.style.display != 'block') {
+            b.style.display = 'block'
+        } else {
+            b.style.display = 'none'
+        }
+    }
+</script>
+
+</html>

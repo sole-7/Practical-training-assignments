@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div原生变色</title>
+</head>
+
+<body>
+    <div class="btn">
+        <button id="btn1" onclick="wi_max()">变宽</button>
+        <button id="btn2" onclick="hi_max()">变高</button>
+        <button id="btn3" onclick="sc_max()">变色</button>
+        <button id="btn4" onclick="yc_max()">隐藏</button>
+        <button id="btn5" onclick="cz_max()">重置</button>
+    </div>
+    <div class="pic">
+        <span id="box"> 
+
+        </span>
+    </div>
+
+</body>
+<script>
+    var a = document.getElementById('btn1')
+    var b = document.getElementById('btn2')
+    var c = document.getElementById('btn3')
+    var d = document.getElementById('btn4')
+    var e = document.getElementById('btn5')
+    var f = document.getElementById('box')
+
+    function wi_max() {
+        f.style.width = '200px'
+    }
+
+    function hi_max() {
+        f.style.height = '300px'
+    }
+
+    function sc_max() {
+        f.style.backgroundColor = 'hotpink'
+    }
+
+    function yc_max() {
+        f.style.display = 'none'
+    }
+
+    function cz_max() {
+        f.style.cssText = {
+            backgroundColor: 'black',
+            width: '100px',
+            height: '100px'
+        }
+    }
+</script>
+
+</html>
+<style>
+    * {
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    .btn {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    button {
+        width: 50px;
+    }
+    
+    span {
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: black;
+    }
+</style>
